@@ -1,0 +1,257 @@
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  height: 80px;
+  position: fixed;
+  top: 0; 
+  width: 100%; 
+}
+
+.nav h3 {
+  margin: 0;
+  font-size: 50px;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  margin: 0 10px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cart-icon {
+  position: relative;
+  margin-right: 30px;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-size: 12px;
+}
+
+/* SearchBar */
+.search-bar {
+  margin: 20px auto;
+  text-align: center;
+  border: none;
+}
+
+.search-bar input {
+  padding: 8px;
+  width: 50%;
+  border: 1px solid #333;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid;
+  margin-left: 100px;
+  margin-top: 130px;
+}
+
+.search-button-container {
+  padding: 8px 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+/* Sidebar */
+.content-wrapper {
+  display: flex; 
+  align-items: flex-start; 
+  padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  height: 100vh; 
+  flex-shrink: 0; 
+  position: fixed;
+  top: 180px;
+  
+}
+
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-section h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.filter-section label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* Card */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; 
+  justify-content: flex-start; 
+  flex-grow: 1; 
+  padding: 20px;
+  margin-left: 290px;
+}
+
+/* Card */
+.card {
+  width: 341px; 
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-img {
+  width: 100%;
+  height: 250px; 
+  object-fit: cover;
+  margin-bottom: 10px; 
+  border-radius: 4px;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  
+}
+
+.card-content {
+  text-align: center;
+  font-size: 14px;
+}
+
+.card-btn {
+  margin-top: auto;
+  padding: 8px 12px;
+  background-color: #2eb227;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 300px;
+  font-size: large;
+}
+.card-btn:hover {
+  background-color: #088b03; 
+}
+
+
+.out-of-stock {
+  background-color: red;
+  color: rgb(251, 247, 247); 
+}
+
+.card-btn:disabled {
+  background-color: rgb(202, 22, 22); 
+}
+
+
+
+/* CartPage */
+.cart-page-container {
+  display: flex; 
+  padding: 40px;
+  gap: 20px; 
+}
+
+
+.cart-items-section {
+  flex: 1; 
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  width: 800px;
+  
+}
+
+
+
+/* Total amount container */
+.cart-total-container {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+  position: fixed;
+  top: 300px; 
+  left: 1200px;
+  height: 500px;
+}
+
+h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.cart-item-img {
+  width: 80px;
+  height: auto;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+.cart-item-details {
+  flex: 1;
+}
+.cart-item-actions {
+  display: flex;
+  align-items: center;
+}
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 20px;
+}
